@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lissa León | Content Creator &amp; Editorial Lifestyle</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Cormorant+Garamond:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#ebe7e6",
+                        "surface-dim": "#ddd9d8",
+                        "primary-fixed-dim": "#c9c6c5",
+                        "on-secondary-fixed": "#281800",
+                        "on-background": "#1c1b1b",
+                        "surface-editorial": "#EAEAEA",
+                        "text-secondary": "#6F6F6F",
+                        "outline": "#747878",
+                        "inverse-on-surface": "#f4f0ef",
+                        "primary-fixed": "#e5e2e1",
+                        "primary-container": "#1c1b1b",
+                        "outline-variant": "#c4c7c7",
+                        "surface-bright": "#fdf8f8",
+                        "surface": "#fdf8f8",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#5f5e5e",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#785e39",
+                        "background": "#fdf8f8",
+                        "secondary-fixed-dim": "#e2c195",
+                        "surface-container": "#f1edec",
+                        "tertiary-fixed": "#e6e1df",
+                        "on-primary-container": "#858383",
+                        "inverse-surface": "#313030",
+                        "secondary": "#735a36",
+                        "on-primary-fixed": "#1c1b1b",
+                        "tertiary-fixed-dim": "#cac6c3",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#474646",
+                        "primary": "#000000",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#c9c6c5",
+                        "on-tertiary-fixed-variant": "#484645",
+                        "on-surface": "#1c1b1b",
+                        "tertiary-container": "#1d1b1a",
+                        "surface-container-low": "#f7f3f2",
+                        "tertiary": "#000000",
+                        "surface-dark": "#0B0B0B",
+                        "accent-gold": "#C8A97E",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#444748",
+                        "secondary-fixed": "#ffddb0",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "pure-white": "#FFFFFF",
+                        "on-tertiary-fixed": "#1d1b1a",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-variant": "#e5e2e1",
+                        "secondary-container": "#fddaac",
+                        "on-tertiary-container": "#868381",
+                        "on-secondary-fixed-variant": "#594320"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1440px",
+                        "margin-mobile": "28px",
+                        "section-gap": "160px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px",
+                        "element-gap": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Geist"],
+                        "section-title": ["Cormorant Garamond", "serif"],
+                        "label-caps": ["Geist"],
+                        "body-lg": ["Geist"],
+                        "editorial-quote": ["EB Garamond"],
+                        "body-sm": ["Geist"],
+                        "display-lg-mobile": ["Geist"],
+                        "display-lg": ["Geist"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "editorial-quote": ["32px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "display-lg": ["80px", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24; }
+        .bg-glass { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .parallax-bg { background-attachment: fixed; }
+        h2 { text-wrap: balance; }
+        .process-steps .font-display-lg { color: #000; }
+        .process-steps .material-symbols-outlined {
+            color: rgba(0, 0, 0, 0.8);
+            font-size: 42px;
+            font-variation-settings: 'FILL' 0, 'wght' 180, 'GRAD' 0, 'opsz' 48;
+        }
+        .process-steps > div > .font-label-caps {
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            line-height: 1.15;
+        }
+        @media (max-width: 767px) {
+            .py-section-gap {
+                padding-top: 112px !important;
+                padding-bottom: 112px !important;
+            }
+            #why-lissa .material-symbols-outlined { font-size: 34px; }
+            #why-lissa h3 { font-size: 18px; }
+            #why-lissa .why-features > div > p { font-size: 15px; }
+            #audience .bg-white {
+                min-height: 210px;
+                padding: 20px;
+            }
+            .process-steps .font-display-lg { font-size: 30px; }
+            .process-steps .material-symbols-outlined { font-size: 36px; }
+            .process-steps > div > .font-label-caps { font-size: 14px; }
+            #work .absolute.inset-0 img { width: 80px; }
+            #community .absolute.inset-0 {
+                padding: 16px;
+            }
+            #community .absolute.inset-0 .font-label-caps {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-lg antialiased">
+<!-- Top Navigation -->
+<nav class="absolute top-0 left-0 w-full z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tighter text-white" href="#">LISSA LEÓN</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-white/80 hover:text-white transition-colors" href="#about">Sobre mí</a>
+<a class="font-label-caps text-label-caps text-white/80 hover:text-white transition-colors" href="#audience">Audiencia</a>
+<a class="font-label-caps text-label-caps text-white/80 hover:text-white transition-colors" href="#work">Trabajo</a>
+<a class="font-label-caps text-label-caps text-white/80 hover:text-white transition-colors" href="#process">Proceso</a>
+<a class="font-label-caps text-label-caps text-white/80 hover:text-white transition-colors" href="#brands">Marcas</a>
+<a class="font-label-caps text-label-caps text-white/80 hover:text-white transition-colors" href="#contact">Contacto</a>
+<a class="border border-white/30 text-white px-6 py-3 rounded text-label-caps scale-100 hover:bg-white hover:text-primary transition-all" href="#contact">Trabajemos juntos</a>
+</div>
+<button class="md:hidden">
+<span class="material-symbols-outlined text-white">menu</span>
+</button>
+</div>
+</nav>
+<!-- Section 1: Hero -->
+<section class="relative h-screen w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-[72%_center] md:bg-[78%_center] transition-transform duration-1000 scale-105 hover:scale-100" data-alt="Fotografía editorial de Lissa León para la sección principal." style="background-image: url('assets/ChatGPT Image 3 jul 2026, 16_19_19.png')">
+</div>
+<div class="absolute inset-0 bg-black/30"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-white">
+<div class="max-w-3xl flex flex-col items-start">
+
+<h1 class="font-display-lg text-[60px] md:text-display-lg mb-3 tracking-tighter leading-[0.92]">LISSA <br/> LE&Oacute;N</h1>
+<p class="font-body-lg text-body-lg max-w-lg mb-7 opacity-90 leading-snug">Inspirando una vida activa con autenticidad.</p>
+<div class="grid grid-cols-3 gap-6 mb-10 border-t border-white/20 pt-6 w-full max-w-[36rem]">
+<div class="flex flex-col items-start min-w-0">
+<p class="font-headline-md text-headline-md leading-none tabular-nums" data-counter data-target="170" data-suffix="K+">0</p>
+<p class="font-label-caps text-label-caps opacity-60 mt-1">Comunidad</p>
+</div>
+<div class="flex flex-col items-start min-w-0">
+<p class="font-headline-md text-headline-md leading-none tabular-nums" data-counter data-target="3" data-suffix="M+">0</p>
+<p class="font-label-caps text-label-caps opacity-60 mt-1">Visualizaciones</p>
+</div>
+<div class="flex flex-col items-start min-w-0">
+<p class="font-headline-md text-headline-md leading-none tabular-nums" data-counter data-target="25" data-suffix="%+">0</p>
+<p class="font-label-caps text-label-caps opacity-60 mt-1">Engagement</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-3 bg-accent-gold text-white px-8 py-4 rounded-sm font-label-caps text-label-caps hover:bg-opacity-90 transition-all group" href="#contact">
+                    Trabajemos juntos
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 2: Why Lissa -->
+<section class="py-section-gap bg-white reveal" id="why-lissa">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid md:grid-cols-12 gap-10 xl:gap-16 items-start">
+<div class="md:col-span-4 xl:col-span-4">
+<h2 class="font-headline-md text-[24px] md:text-[29px] font-semibold text-primary leading-[1.05] uppercase max-w-sm">&iquest;POR QU&Eacute; LAS MARCAS TRABAJAN CON LISSA?</h2>
+</div>
+<div class="why-features md:col-span-8 xl:col-span-8 grid md:grid-cols-3 gap-10 xl:gap-12">
+<div class="space-y-5">
+<span class="material-symbols-outlined text-[42px] text-primary">north_east</span>
+<h3 class="font-headline-md text-[20px] font-semibold leading-snug">Contenido que conecta</h3>
+<p class="text-text-secondary text-[16px] leading-relaxed">Historias reales que generan identificaci&oacute;n, confianza y acci&oacute;n inmediata en la audiencia activa.</p>
+</div>
+<div class="space-y-5">
+<span class="material-symbols-outlined text-[42px] text-primary">lens_blur</span>
+<h3 class="font-headline-md text-[20px] font-semibold leading-snug">Producci&oacute;n premium</h3>
+<p class="text-text-secondary text-[16px] leading-relaxed">Fotograf&iacute;a, video y edici&oacute;n de alto nivel listos para campa&ntilde;as multiplataforma de gran escala.</p>
+</div>
+<div class="space-y-5">
+<span class="material-symbols-outlined text-[42px] text-primary">verified</span>
+<h3 class="font-headline-md text-[20px] font-semibold leading-snug">Audiencia real</h3>
+<p class="text-text-secondary text-[16px] leading-relaxed">Comunidad org&aacute;nica y comprometida con el deporte, el bienestar y la disciplina.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Impact Metrics -->
+<section class="py-section-gap bg-surface-editorial/50 reveal" id="audience">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid md:grid-cols-12 gap-10 xl:gap-16 items-start">
+<div class="md:col-span-4 xl:col-span-4">
+<p class="font-label-caps text-label-caps text-primary mb-4 uppercase">Datos que importan</p>
+<h2 class="font-section-title text-[32px] md:text-[39px] font-semibold tracking-[-0.02em] leading-[1.05] max-w-sm">Resultados que generan impacto.</h2>
+</div>
+<div class="md:col-span-8 xl:col-span-8 grid md:grid-cols-2 xl:grid-cols-4 gap-5 xl:gap-4">
+<div class="bg-white p-6 xl:p-7 border border-outline-variant/30 min-h-[240px] flex flex-col justify-between">
+<div class="flex items-start">
+<svg aria-label="TikTok" class="w-7 h-7 text-primary" fill="currentColor" viewBox="0 0 24 24">
+<path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.35V2h-3.12v13.17a2.9 2.9 0 1 1-2-2.75V9.25a6 6 0 1 0 5.12 5.93V8.54a7.9 7.9 0 0 0 4.77 1.6V7a4.8 4.8 0 0 1-1-.31z"/>
+</svg>
+</div>
+<div class="space-y-4">
+<div>
+<p class="text-[28px] font-semibold tracking-tight leading-none">110K+</p>
+<p class="text-label-caps text-[10px] opacity-60 mt-2">SEGUIDORES</p>
+</div>
+<div>
+<p class="text-[20px] leading-none">2.1M+</p>
+<p class="text-label-caps text-[10px] opacity-60 mt-2">VIEWS/MES</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 xl:p-7 border border-outline-variant/30 min-h-[240px] flex flex-col justify-between">
+<div class="flex items-start">
+<svg aria-label="Instagram" class="w-7 h-7 text-primary" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+<rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/>
+<circle cx="12" cy="12" r="4"/>
+<circle cx="17.4" cy="6.6" r="1"/>
+</svg>
+</div>
+<div class="space-y-4">
+<div>
+<p class="text-[28px] font-semibold tracking-tight leading-none">58K+</p>
+<p class="text-label-caps text-[10px] opacity-60 mt-2">SEGUIDORES</p>
+</div>
+<div>
+<p class="text-[20px] leading-none">820K+</p>
+<p class="text-label-caps text-[10px] opacity-60 mt-2">ALCANCE/MES</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 xl:p-7 border border-outline-variant/30 min-h-[240px] flex flex-col justify-between">
+<div class="flex items-start">
+<svg aria-label="Facebook" class="w-7 h-7 text-primary" fill="currentColor" viewBox="0 0 24 24">
+<path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.6-1.6h1.7V3.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.4V10H7.5v3h2.6v8h3.4z"/>
+</svg>
+</div>
+<div class="space-y-4">
+<div>
+<p class="text-[28px] font-semibold tracking-tight leading-none">15K+</p>
+<p class="text-label-caps text-[10px] opacity-60 mt-2">SEGUIDORES</p>
+</div>
+<div>
+<p class="text-[20px] leading-none">240K+</p>
+<p class="text-label-caps text-[10px] opacity-60 mt-2">ALCANCE/MES</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 xl:p-7 border border-outline-variant/30 min-h-[240px] flex flex-col justify-between">
+<div class="flex items-start">
+<svg aria-label="Audiencia" class="w-7 h-7 text-primary" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+<circle cx="9" cy="8" r="2.75"/>
+<circle cx="16.5" cy="9" r="2.25"/>
+<path d="M4.5 18c.7-2.6 2.8-4 4.9-4s4.2 1.4 4.9 4"/>
+<path d="M14.2 18c.4-1.9 1.8-3 3.5-3 1.2 0 2.3.5 3 1.5"/>
+</svg>
+</div>
+<div class="space-y-4">
+<div>
+<p class="text-[28px] font-semibold tracking-tight leading-none">78%</p>
+<p class="text-label-caps text-[10px] opacity-60 mt-2">MUJERES</p>
+</div>
+<div>
+<p class="text-[20px] leading-none">22%</p>
+<p class="text-label-caps text-[10px] opacity-60 mt-2">HOMBRES</p>
+</div>
+<p class="text-[14px] text-text-secondary leading-relaxed max-w-[14rem]">Comunidad activa interesada en bienestar, deporte y estilo de vida real.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Dark Section 'Personas Reales' -->
+<section class="py-section-gap bg-surface-dark text-white overflow-hidden" id="community">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid md:grid-cols-12 gap-10 xl:gap-16 items-start">
+<div class="md:col-span-4 xl:col-span-4 reveal">
+<p class="font-label-caps text-label-caps text-white mb-4 uppercase">Mi comunidad</p>
+<h2 class="font-section-title text-[32px] md:text-[39px] font-semibold tracking-[-0.02em] leading-[1.05] max-w-sm">Personas reales que buscan inspiraci&oacute;n diaria.</h2>
+<p class="text-[16px] leading-relaxed opacity-60 max-w-sm mt-6">Mi audiencia est&aacute; formada por personas activas que valoran el deporte, la disciplina, la familia y un estilo de vida saludable.</p>
+</div>
+<div class="md:col-span-8 xl:col-span-8">
+<div class="grid grid-cols-2 xl:grid-cols-4 gap-4">
+<div class="relative aspect-[3/5] overflow-hidden group reveal" style="transition-delay: 100ms;">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A vibrant shot of a young active woman running in a minimalist urban park at sunrise. The lighting is warm and kinetic, capturing a sense of movement and inspiration. The composition is editorial and clean, emphasizing a healthy lifestyle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvnBENN3ivtTm6hLZjHu8nsi8PEle8lmqo2eoVByvwnftTW1JYbAe2qnGNZHJO-sg9Po7QY-Wcw8Q0htFc7Ql45lNKiOIv54ShUa9GB5W5fB3meMcKFt2XfKaW7xXs0THXG4jgth95-3vXd4j9RLxOFUAfsUM8DBatcZ_-EoliziaLvDVjipolD9KKzEIoO7H_3kvXo_DEelV8s-dTcEYbKaa8wU2tB_hUI-nPQdm6y-qZanNYdlys"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+<p class="font-label-caps text-[14px]">Mujeres activas</p>
+<p class="text-[10px] opacity-60">que buscan inspirarse</p>
+</div>
+</div>
+<div class="relative aspect-[3/5] overflow-hidden group reveal" style="transition-delay: 200ms;">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="An intimate lifestyle photo of a modern mother sharing a healthy meal with her children in a bright, minimalist kitchen. The setting is clean with white surfaces and natural wood accents. The mood is warm, emotional, and reflects contemporary motherhood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4qnirY0fi_ewB616R9JXh0wDSHFTSeDXOI9LTRPGgq5uEgeV2WVn2ovfo85Di1sfulrEkiuYA3izB6GH3SqHTz8AQD1sL2pWRUacm-rs9g__dShaa37sXsWQAko3W8R9b7rF06AhduCIybmI1oAJYruEi0wk6BigcC-Ll14vGEGw6zVu4wiLLkfyvQIzJ03vj4-_eIIxgPleOAY5KWCzLpYEUmIjSlt-bsm9nt_8IPSwOsTA_M784"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+<p class="font-label-caps text-[14px]">Mam&aacute;s modernas</p>
+<p class="text-[10px] opacity-60">que quieren crecer</p>
+</div>
+</div>
+<div class="relative aspect-[3/5] overflow-hidden group reveal" style="transition-delay: 300ms;">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A focused high-contrast shot of an athlete in a technical training session. The lighting is dramatic and cinematic, highlighting sweat and determination. The environment is a dark, luxury private gym with minimalist equipment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAepIVreBofZOltxrj9ASHs1RUISTmM0pe3wNPg-p5I1EJaaYil3oXUFea6jn-H4nEKmAYUeSuaA84A_spNs3njiH33Dm6hk92uJhCPXUbqLe8fFAe5NuR-bfdbjWYYdRuAAHazsYhuUyLAExNdRmPN64QI9r2HXEBkiUcmtD27OThucCdch5slTEkHHnHoq7WE_3rKM4OpkMeYCEY9SvdIH3bJsI2RkjS8xXyLeedg8kC8FPQKslOD"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+<p class="font-label-caps text-[14px]">Deporte y movimiento</p>
+<p class="text-[10px] opacity-60">alto rendimiento</p>
+</div>
+</div>
+<div class="relative aspect-[3/5] overflow-hidden group reveal" style="transition-delay: 400ms;">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A beautifully composed flat-lay of healthy gourmet breakfast items on a ceramic plate, featuring fresh berries, granola, and artisanal yogurt. The aesthetic is bright and editorial, using a white and soft neutral color palette to convey wellness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6nmWG3xioLOIbhoQQQJmkHtqBV-tTFOoEepzZC1EJRmuQc6ENnRB1k-YTN-t3ttYskez_Lv-CFEsoTPBhziISmqnp7-XfBNwqv1J6pPMUN7uwRYJQyZkKNIuG6HzoP-9qkcpMdQse0datwwiscWQ1dcsUkh4NWiwvEUFC4569Tc5Pw4ii0hifYgTQjMLYB1GzDi8mzivRRh3lUOs0OkhF4_hIwF29k0fEhV-p8H7UnNJK33hVY49I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+<p class="font-label-caps text-[14px]">H&aacute;bitos saludables</p>
+<p class="text-[10px] opacity-60">bienestar integral</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Content Gallery (Campaigns) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto reveal" id="work">
+<div class="grid md:grid-cols-12 gap-10 xl:gap-16 items-start">
+<div class="md:col-span-4 xl:col-span-4">
+<p class="font-label-caps text-label-caps text-primary mb-4 uppercase">Campa&ntilde;as y marcas</p>
+<h2 class="font-section-title text-[32px] md:text-[39px] font-semibold tracking-[-0.02em] leading-[1.05] max-w-sm">Creamos contenido que las marcas aman y la gente quiere ver.</h2>
+</div>
+<div class="md:col-span-8 xl:col-span-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="relative group cursor-pointer overflow-hidden aspect-[3/5]">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="A high-fashion sports campaign image for a major athletic brand. A woman is captured mid-leap against a clean architectural backdrop. The lighting is high-contrast and sharp. The brand logo is integrated naturally into the cinematic scene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxHPApDO2WIZStuPbHGuG10kWMVEGyCyzjFrdJ-bUp1U_o_tHhz4OXFdvvQql8iCSvqF4g1ywV8TiLsuouBJohNV_kfq4gbaL4HP90ELOEVQZLjWLVsxGi_fCvNkUmfZtk51ZqRSuBP2TbPMKBIoPN0rqksSmgfHLsDh1G8WEVF_MbMCwcn57WcpOafNYdq8kVXQLR0gMKL88Y9KtpWramOmbZwCvi3sEmawwNzi2FnDfUL2QNxW5Q"/>
+<div class="absolute inset-0 bg-black/45 flex items-center justify-center p-8">
+<img alt="Nike" class="w-24 h-auto" src="https://cdn.simpleicons.org/nike/ffffff"/>
+</div>
+</div>
+<div class="relative group cursor-pointer overflow-hidden aspect-[3/5]">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="A lifestyle content shot for a luxury activewear brand. A woman is walking through a modern urban environment at golden hour. The look is chic, athletic, and sophisticated, using a palette of beige and sand tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSsclNmJcrhuWETLhg-vZx-fKvShekaguo0c6jAtHVcimegLn0yBkbiSVAowdsIGQ2XmlXEbSfzxgVEqTe_9OSRNqbQEYrwzSp-N6WHN5qDWih_1Vlj7pbGnJDrNliMC41zQ1qzuWFPGvmIOLgPz_l4NNmbag9pN27CfgYzawtIPjKd57-gu9T1Ws9DO9t69WWDDcdSXkbei39NFAQt8BtAAm_qxUUiQZ9jj8bF6o_0vdChyZWbJGF"/>
+<div class="absolute inset-0 bg-black/45 flex items-center justify-center p-8">
+<img alt="Puma" class="w-24 h-auto" src="https://cdn.simpleicons.org/puma/ffffff"/>
+</div>
+</div>
+<div class="relative group cursor-pointer overflow-hidden aspect-[3/5]">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="An editorial campaign image for a maternity wellness brand. A fit pregnant woman is doing yoga in a sun-drenched minimalist studio. The mood is peaceful, empowering, and aesthetically refined." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPwlyxzlmP-DWnZtH9lcorZh33Byzm5zweYZTNto7GM6SiBHzbhS2EqSDuA0zkbXCeJPsFECJE-hYXQcegr6fG5ZFI56Ps2o1yUb1EhfPRZF50p18fn0A5VoGcXJ0nlhXnSXcpjcZjjIJXFybwdUq1LO7xFc8_K6NBV-wtQuD2Uismt0VMhK9meV7VmAMWJE7KDf1MiL-OV06Ogu_hqFmFpxGPVB-zf3rzjPflCNcgTVMiqNTBUe_N"/>
+<div class="absolute inset-0 bg-black/45 flex items-center justify-center p-8">
+<img alt="Adidas" class="w-24 h-auto" src="https://cdn.simpleicons.org/adidas/ffffff"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Dark Section 'Equipo Creativo' (Jhan) -->
+<section class="py-section-gap bg-surface-dark text-white reveal">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid md:grid-cols-12 gap-10 xl:gap-16 items-start">
+<div class="md:col-span-4 xl:col-span-4">
+<div>
+<p class="font-label-caps text-label-caps text-white mb-4 uppercase">Detrás del contenido</p>
+<h2 class="font-section-title text-[32px] md:text-[39px] font-semibold tracking-[-0.02em] leading-[1.05] mb-6">No es solo contenido. Es estrategia, creatividad y ejecución.</h2>
+<p class="text-body-sm opacity-60 max-w-md">Detrás de cada pieza hay un equipo creativo que cuida cada detalle para que tu marca conecte y destaque en un entorno digital saturado.</p>
+</div>
+</div>
+<div class="md:col-span-8 xl:col-span-8 space-y-12">
+<div class="grid md:grid-cols-2 gap-x-0 gap-y-0">
+<div class="p-6 space-y-4 border-b border-white/10 md:border-r md:border-white/10">
+<span class="material-symbols-outlined text-3xl font-extralight text-white">architecture</span>
+<div>
+<p class="font-label-caps text-label-caps">Dirección Creativa</p>
+<p class="text-[12px] opacity-40 mt-2">Estrategia visual y conceptual</p>
+</div>
+</div>
+<div class="p-6 space-y-4 border-b border-white/10">
+<span class="material-symbols-outlined text-3xl font-extralight text-white">videocam</span>
+<div>
+<p class="font-label-caps text-label-caps">Producción Audiovisual</p>
+<p class="text-[12px] opacity-40 mt-2">Videos de alto impacto</p>
+</div>
+</div>
+<div class="p-6 space-y-4 border-b border-white/10 md:border-b-0 md:border-r md:border-white/10">
+<span class="material-symbols-outlined text-3xl font-extralight text-white">photo_camera</span>
+<div>
+<p class="font-label-caps text-label-caps">Fotografía</p>
+<p class="text-[12px] opacity-40 mt-2">Contenido auténtico y editorial</p>
+</div>
+</div>
+<div class="p-6 space-y-4">
+<span class="material-symbols-outlined text-3xl font-extralight text-white">movie_edit</span>
+<div>
+<p class="font-label-caps text-label-caps">Edición</p>
+<p class="text-[12px] opacity-40 mt-2">Postproducción profesional</p>
+</div>
+</div>
+<div class="p-6 space-y-4 md:col-span-2 border-t border-white/10">
+<span class="material-symbols-outlined text-3xl font-extralight text-white">hub</span>
+<div>
+<p class="font-label-caps text-label-caps">Estrategia de Contenido</p>
+<p class="text-[12px] opacity-40 mt-2">Ideas que conectan y convierten</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Dark Section 'Equipo Creativo' (Jhan) -->
+<!-- Section 7: Process -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto reveal" id="process">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<div class="lg:col-span-3 space-y-6">
+<p class="font-label-caps text-label-caps text-black uppercase">Cómo trabajamos</p>
+<h2 class="font-section-title text-[32px] md:text-[39px] font-semibold tracking-[-0.02em] leading-[1.05]">Un proceso claro para resultados excepcionales.</h2>
+</div>
+<div class="process-steps lg:col-span-9 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 border-t border-black/10 xl:border-t-0">
+<div class="space-y-4 py-8 xl:py-0 xl:px-6 border-b border-black/10 sm:border-r sm:border-black/10 xl:border-b-0">
+<span class="font-display-lg text-[34px] leading-none text-black/25 block">01</span>
+<span class="material-symbols-outlined text-[34px] leading-none text-black/55">groups</span>
+<p class="font-label-caps text-label-caps">Nos conocemos</p>
+<p class="text-[13px] leading-relaxed text-text-secondary">Entendemos tus objetivos y necesidades.</p>
+</div>
+<div class="space-y-4 py-8 xl:py-0 xl:px-6 border-b border-black/10 xl:border-b-0 xl:border-r xl:border-black/10">
+<span class="font-display-lg text-[34px] leading-none text-black/25 block">02</span>
+<span class="material-symbols-outlined text-[34px] leading-none text-black/55">emoji_objects</span>
+<p class="font-label-caps text-label-caps">Creamos la idea</p>
+<p class="text-[13px] leading-relaxed text-text-secondary">Desarrollamos el concepto adecuado para tu marca.</p>
+</div>
+<div class="space-y-4 py-8 xl:py-0 xl:px-6 border-b border-black/10 sm:border-r sm:border-black/10 xl:border-b-0">
+<span class="font-display-lg text-[34px] leading-none text-black/25 block">03</span>
+<span class="material-symbols-outlined text-[34px] leading-none text-black/55">photo_camera</span>
+<p class="font-label-caps text-label-caps">Producción</p>
+<p class="text-[13px] leading-relaxed text-text-secondary">Grabamos y producimos con calidad premium.</p>
+</div>
+<div class="space-y-4 py-8 xl:py-0 xl:px-6 border-b border-black/10 xl:border-b-0 xl:border-r xl:border-black/10">
+<span class="font-display-lg text-[34px] leading-none text-black/25 block">04</span>
+<span class="material-symbols-outlined text-[34px] leading-none text-black/55">edit_square</span>
+<p class="font-label-caps text-label-caps">Entrega</p>
+<p class="text-[13px] leading-relaxed text-text-secondary">Contenido listo para publicar y revisar.</p>
+</div>
+<div class="space-y-4 py-8 xl:py-0 xl:px-6">
+<span class="font-display-lg text-[34px] leading-none text-black/25 block">05</span>
+<span class="material-symbols-outlined text-[34px] leading-none text-black/55">ios_share</span>
+<p class="font-label-caps text-label-caps">Publicación</p>
+<p class="text-[13px] leading-relaxed text-text-secondary">Difundimos y medimos los resultados.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 8: Sectors -->
+<section class="py-24 bg-surface-dark text-white border-y border-white/5 reveal" id="brands">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div class="lg:col-span-3 space-y-5">
+<p class="font-label-caps text-label-caps text-white/50 uppercase">Marcas ideales</p>
+<h2 class="font-section-title text-[32px] md:text-[39px] font-semibold tracking-[-0.02em] leading-[1.05]">Sectores con los que creamos sinergia.</h2>
+</div>
+<div class="lg:col-span-9 grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-7 gap-10 items-center text-center opacity-50 grayscale hover:grayscale-0 transition-all">
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-3xl">fitness_center</span>
+<p class="text-[10px] font-label-caps">DEPORTE</p>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-3xl">smartphone</span>
+<p class="text-[10px] font-label-caps">TECNOLOGÍA</p>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-3xl">directions_car</span>
+<p class="text-[10px] font-label-caps">AUTOMOTRIZ</p>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-3xl">spa</span>
+<p class="text-[10px] font-label-caps">BIENESTAR</p>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-3xl">apparel</span>
+<p class="text-[10px] font-label-caps">MODA</p>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-3xl">family_restroom</span>
+<p class="text-[10px] font-label-caps">FAMILIA</p>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-3xl">travel_explore</span>
+<p class="text-[10px] font-label-caps">TURISMO</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 9: Testimonials -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto reveal">
+<div class="text-center mb-20">
+<p class="font-label-caps text-label-caps text-accent-gold mb-4 uppercase">Lo que dicen</p>
+<h2 class="font-section-title text-[32px] md:text-[39px] font-semibold tracking-[-0.02em] leading-[1.05]">La comunidad recomienda.</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="bg-surface-editorial p-10 relative">
+<span class="font-editorial-quote text-6xl text-accent-gold opacity-30 absolute top-4 left-4">“</span>
+<p class="font-editorial-quote text-editorial-quote mb-8 italic">Lissa me motiva todos los días a ser mejor y a nunca rendirme. Es real y eso la hace única.</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-outline-variant"></div>
+<div>
+<p class="font-label-caps text-[12px]">María Fernanda</p>
+<p class="text-[10px] opacity-60">Seguidora</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-editorial p-10 relative">
+<span class="font-editorial-quote text-6xl text-accent-gold opacity-30 absolute top-4 left-4">“</span>
+<p class="font-editorial-quote text-editorial-quote mb-8 italic">Sus entrenamientos y consejos me han ayudado muchísimo a mantenerme constante.</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-outline-variant"></div>
+<div>
+<p class="font-label-caps text-[12px]">Valeria G.</p>
+<p class="text-[10px] opacity-60">Seguidora</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-editorial p-10 relative">
+<span class="font-editorial-quote text-6xl text-accent-gold opacity-30 absolute top-4 left-4">“</span>
+<p class="font-editorial-quote text-editorial-quote mb-8 italic">Me encanta cómo muestra su vida de mamá y deportista, es muy inspirador.</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-outline-variant"></div>
+<div>
+<p class="font-label-caps text-[12px]">Andrea R.</p>
+<p class="text-[10px] opacity-60">Seguidora</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 10: Final CTA -->
+<section class="relative py-32 overflow-hidden flex items-center justify-center" id="contact">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center parallax-bg brightness-[0.4]" data-alt="A wide, epic landscape shot at dusk of a serene modern architectural home by a lake. The lighting is cinematic, with soft internal glows from the house reflecting on the water. The mood is aspirational and premium, symbolizing the success and peace that comes with an active, balanced lifestyle." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQjvm-zdUh0BghgNAx20Njqsp6AZP5ART7Gq3kRiXLrtBh-9GU3A_hyVAqrWqITu2cP5LAzkNeJzTHLP1DJZoKKX_brjIOTBDVMdmxPfcouZdyf27kF7GNH9Ixwt71vt_WtPyH18BeR2DmQcn_5Y-AoFy9vj8MMzKUCIBJVGJYqcC4F1k5o3--rMrUE7fjkzO0ryg3vodJO0-mp-5Zg2uwBGbKkqS84eGzQwyeF77MkMIXzwmOyutO')">
+</div>
+</div>
+<div class="relative z-10 text-center text-white px-margin-mobile max-w-4xl reveal">
+<p class="font-label-caps text-label-caps text-accent-gold mb-6 uppercase tracking-widest">Trabajemos juntos</p>
+<h2 class="font-section-title text-[32px] md:text-[39px] font-semibold tracking-[-0.02em] leading-[1.05] mb-10">Las mejores campañas comienzan con una conversación.</h2>
+<p class="text-body-lg opacity-80 mb-12 max-w-2xl mx-auto">Cuéntanos sobre tu marca y creemos algo increíble juntos.</p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<a class="bg-accent-gold text-white px-12 py-5 font-label-caps text-label-caps rounded-sm hover:brightness-110 transition-all flex items-center justify-center gap-3" href="#">
+                    AGENDAR UNA REUNIÓN <span class="material-symbols-outlined">calendar_today</span>
+</a>
+<a class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-12 py-5 font-label-caps text-label-caps rounded-sm hover:bg-white/20 transition-all flex items-center justify-center gap-3" href="#">
+                    WHATSAPP <span class="material-symbols-outlined">chat</span>
+</a>
+</div>
+<div class="mt-16 flex flex-col md:flex-row justify-center gap-12 text-sm opacity-60">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">call</span>
+                    +51 999 123 456
+                </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+                    hola@lissaleon.com
+                </div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-dark py-12 border-t border-white/5">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop gap-8 max-w-container-max mx-auto">
+<p class="font-headline-md text-headline-md font-bold text-white tracking-tighter">LISSA LEÓN</p>
+<div class="flex gap-8 text-white/50 text-label-caps text-[10px]">
+<a class="hover:text-accent-gold transition-colors" href="#">Instagram</a>
+<a class="hover:text-accent-gold transition-colors" href="#">TikTok</a>
+<a class="hover:text-accent-gold transition-colors" href="#">YouTube</a>
+<a class="hover:text-accent-gold transition-colors" href="#">Política de Privacidad</a>
+</div>
+<p class="text-white/30 text-[10px] font-label-caps">© 2024 Lissa León. Todos los derechos reservados.</p>
+</div>
+</footer>
+<script>
+        // Reveal Animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Parallax Effect for Backgrounds
+        window.addEventListener('scroll', () => {
+            const scrollPos = window.pageYOffset;
+            const parallax = document.querySelectorAll('.parallax-bg');
+            parallax.forEach(bg => {
+                bg.style.backgroundPositionY = `${scrollPos * 0.3}px`;
+            });
+        });
+
+                const animateCounters = () => {
+            const counters = document.querySelectorAll('[data-counter]');
+            counters.forEach(counter => {
+                const target = Number(counter.dataset.target || 0);
+                const suffix = counter.dataset.suffix || '';
+                const duration = 1600;
+                const startTime = performance.now();
+
+                const tick = (now) => {
+                    const progress = Math.min((now - startTime) / duration, 1);
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    const value = Math.round(target * eased);
+                    counter.textContent = `${value}${suffix}`;
+                    if (progress < 1) {
+                        requestAnimationFrame(tick);
+                    }
+                };
+
+                requestAnimationFrame(tick);
+            });
+        };
+
+        // Smooth reveal on load
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+            animateCounters();
+        });
+    </script>
+</body></html>
