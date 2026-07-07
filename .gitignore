@@ -1,0 +1,5 @@
+.vercel/
+.vercel-deploy-lissalejoleon/
+preview.out.log
+preview.err.log
+.write-test.txt
