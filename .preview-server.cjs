@@ -5,7 +5,7 @@ const root = process.cwd();
 const port = 4174;
 http.createServer((req, res) => {
   let reqPath = decodeURIComponent((req.url || "/").split("?")[0]);
-  if (reqPath === "/") reqPath = "/LISSALEJOLEON.html";
+  if (reqPath === "/") reqPath = "/index.html";
   const filePath = path.join(root, reqPath.replace(/^\//, ""));
   fs.readFile(filePath, (err, data) => {
     if (err) {
